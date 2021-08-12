@@ -901,7 +901,6 @@ li {
   border-radius: 5px;
   border: 1px solid #33b864;
   z-index: 1;
-  transition-delay: display 0.5s;
 }
 
 .progetti .max-width .card-row .card .front .front-bg {
@@ -921,7 +920,6 @@ li {
 .progetti .max-width .card-row .card:hover .front, .progetti .max-width .card-row .card:active .front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-  display: none;
 }
 
 .progetti .max-width .card-row .card .back {
