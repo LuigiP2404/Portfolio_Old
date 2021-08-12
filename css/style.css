@@ -901,6 +901,7 @@ li {
   border-radius: 5px;
   border: 1px solid #33b864;
   z-index: 1;
+  transition: display 1s;
 }
 
 .progetti .max-width .card-row .card .front .front-bg {
