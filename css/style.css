@@ -920,6 +920,7 @@ li {
 .progetti .max-width .card-row .card:hover .front, .progetti .max-width .card-row .card:active .front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+  display: none;
 }
 
 .progetti .max-width .card-row .card .back {
