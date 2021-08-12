@@ -36,9 +36,9 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
-.active i {
+/* .active i {
   color: #fff !important;
-}
+} */
 
 * {
   margin: 0;
