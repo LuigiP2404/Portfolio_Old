@@ -36,10 +36,9 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
-/* .active i {
+/* .active i{
   color: #fff !important;
 } */
-
 * {
   margin: 0;
   padding: 0;
@@ -861,6 +860,10 @@ li {
   padding-bottom: 20px;
 }
 
+.progetti .max-width .card-row {
+  margin-top: 50px;
+}
+
 .progetti .max-width .card-row #portfolio-card .front {
   background-image: url(../img/sfondoportfolio.jpg);
   background-size: cover;
@@ -870,6 +873,14 @@ li {
 
 .progetti .max-width .card-row #monster-card .front {
   background-image: url(../img/sfondomonster.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-opacity: 0.7;
+}
+
+.progetti .max-width .card-row #todo-card .front {
+  background-image: url(../img/todo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
