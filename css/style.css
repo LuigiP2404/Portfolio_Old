@@ -887,6 +887,18 @@ li {
   background-opacity: 0.7;
 }
 
+.progetti .max-width .card-row #calcolatrice-card .front {
+  background-image: url(../img/calcolatrice.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-opacity: 0.7;
+}
+
+.progetti .max-width .card-row #calcolatrice-card .back p {
+  letter-spacing: 2px;
+}
+
 .progetti .max-width .card-row .card {
   width: 350px;
   height: 430px;
