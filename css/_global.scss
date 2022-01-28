@@ -1,0 +1,124 @@
+@import "variables";
+
+:root {
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: $verde;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $verde;
+}
+
+.father {
+  margin-left: 5rem;
+  transition: margin 0.5s;
+}
+
+.db {
+  display: block !important;
+}
+
+.ml-16 {
+  margin-left: 16rem;
+}
+
+.m-o {
+  display: none;
+}
+
+.d-o {
+  display: block;
+}
+
+/* .active i{
+  color: #fff !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#white, #green {
+  width: 60px;
+  height: 60px;
+}
+
+#white {
+  background-color: transparent;
+  color: white;
+}
+
+#green {
+  background-color: transparent;
+  color: $verde; 
+}
+
+.green-text {
+  color: #33b864;
+}
+
+.titlehr {
+  width: 60px;
+  margin: auto;
+  margin: -50px auto 50px auto;
+  border: 0;
+  border-bottom: 2px solid $verde;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+a {
+  color: $bianco;
+}
+
+li {
+  list-style: none;
+}
+
+.dn {
+  display: none;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
