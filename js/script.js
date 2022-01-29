@@ -1,4 +1,3 @@
-let navbar = document.getElementsByClassName('navbar')[0];
 let logowhite = document.getElementById('white');
 let logogreen = document.getElementById('green');
 let links = document.getElementsByClassName('links');
@@ -6,20 +5,6 @@ let hambmenu = document.getElementById('hamburger');
 let menu = document.getElementById('menu');
 let hamburgericon = document.getElementById('hamburger-icon');
 let carousel = document.getElementsByClassName('.carousel')[0];
-
-window.addEventListener('scroll', () => {
-  if(this.scrollY > 20) {
-    navbar.classList.add('scrolled');
-    logowhite.classList.remove('dn');
-    logogreen.classList.add('dn');
-    links[0].classList.remove('active');
-  }
-  else{
-    navbar.classList.remove('scrolled');
-    logogreen.classList.remove('dn');
-    logowhite.classList.add('dn');
-  }
-})
 
 hambmenu.addEventListener('click', () => {
   menu.classList.toggle('clicked');
@@ -49,7 +34,7 @@ const makeNavLinksSmooth = ( ) => {
   }
 }
 
-/* const spyScrolling = ( ) => {
+const spyScrolling = ( ) => {
   const sections = document.querySelectorAll( '.sezione' );
 
   window.onscroll = ( ) => {
@@ -62,7 +47,7 @@ const makeNavLinksSmooth = ( ) => {
         document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
       }
   } 
-} */
+}
 
 ScrollReveal().reveal('.reveal1', { delay: 300 });
 ScrollReveal().reveal('.reveal2', { delay: 500 });
