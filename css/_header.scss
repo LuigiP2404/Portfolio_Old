@@ -56,6 +56,16 @@
           margin-left: 1rem;
           transition: all 0.3s ease-in-out;
         }
+
+        &.active {
+          i {
+            color: #fff;
+          }
+
+          .sidebar-item-text {
+            color: #000; 
+          }
+        }
       }
     }
     .sidebar-item:last-child {
@@ -339,8 +349,13 @@
             transition: all 0.3s ease-in-out;
             margin-left: 20px;
           }
+
+          &.active {
+            i {
+              color: #fff;
+            }
+          }
         }
- 
       }
     }
   }

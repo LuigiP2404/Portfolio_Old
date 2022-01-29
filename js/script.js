@@ -1,23 +1,3 @@
-let logowhite = document.getElementById('white');
-let logogreen = document.getElementById('green');
-let links = document.getElementsByClassName('links');
-let hambmenu = document.getElementById('hamburger');
-let menu = document.getElementById('menu');
-let hamburgericon = document.getElementById('hamburger-icon');
-let carousel = document.getElementsByClassName('.carousel')[0];
-
-hambmenu.addEventListener('click', () => {
-  menu.classList.toggle('clicked');
-  hamburgericon.classList.toggle('hambclicked');
-})
-
-for (let i = 0; i<links.length; i++) {
-  links[i].addEventListener('click', () => {
-    menu.classList.remove('clicked');
-    hamburgericon.classList.remove('hambclicked');
-  })
-}
-
 const makeNavLinksSmooth = ( ) => {
   const navLinks = document.querySelectorAll( '.links' );
 
@@ -34,17 +14,27 @@ const makeNavLinksSmooth = ( ) => {
   }
 }
 
-const spyScrolling = ( ) => {
-  const sections = document.querySelectorAll( '.sezione' );
+const spyScrolling = () => {
+  const sections = document.querySelectorAll('.sezione');
 
-  window.onscroll = ( ) => {
+  window.onscroll = () => {
     const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
-    for ( let s in sections )
-      if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+    for (let s in sections)
+      if (sections.hasOwnProperty(s) && sections[s].offsetTop <= scrollPos) {
         const id = sections[ s ].id;
-        document.querySelector( '.active' ).classList.remove( 'active' );
-        document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
+        if (screen.width > 767) {
+          if (document.querySelector('.sidebar .active')) {
+            document.querySelector('.sidebar .active').classList.remove('active');
+          }
+          document.querySelector(`.sidebar a[href="#${ id }"]`).classList.add('active');
+        } else {
+          if (document.querySelector('.sidebar-mo .active')) {
+            document.querySelector('.sidebar-mo .active').classList.remove('active');
+          }
+          document.querySelector(`.sidebar-mo a[href="#${ id }"]`).classList.add('active');
+        }
+		
       }
   } 
 }
