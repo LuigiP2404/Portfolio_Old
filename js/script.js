@@ -69,5 +69,5 @@ ScrollReveal().reveal('.reveal2', { delay: 500 });
 ScrollReveal().reveal('.reveal3', { delay: 700 });
 ScrollReveal().reveal('.reveal4', { delay: 900 });
 
-makeNavLinksSmooth( );
-spyScrolling( );
+makeNavLinksSmooth();
+spyScrolling();

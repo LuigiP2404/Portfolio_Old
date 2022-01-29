@@ -902,8 +902,6 @@ li {
 .progetti .max-width .card-row .card {
   width: 350px;
   height: 430px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   -webkit-perspective: 600px;
           perspective: 600px;
   -webkit-transition: 0.5s;
@@ -1413,4 +1411,3 @@ li {
     text-align: center;
   }
 }
-/*# sourceMappingURL=style.css.map */
